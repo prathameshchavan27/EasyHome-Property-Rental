@@ -1,0 +1,173 @@
+/* General Page Background */
+body { 
+  font-family: Arial, sans-serif;
+}
+
+
+.background-container{
+  background: linear-gradient(135deg, #264c8e, #007bff);
+  padding: 40px;
+}
+/* General Container Styling */
+.add-property-container {
+  max-width: 650px;
+  margin:  auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+}
+
+.add-property-container:hover {
+  transform: scale(1.02);
+}
+
+h2 {
+  text-align: center;
+  color: #0047ab;
+  font-size: 28px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Form Styling */
+.property-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid #504f4f;
+  border-radius: 10px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #1e90ff;
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(30, 144, 255, 0.3);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+label {
+  font-size: 17px;
+  font-weight: 700;
+  color: #0047ab;
+}
+
+/* Amenities Section */
+.amenities-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.amenity-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: #0047ab;
+}
+
+.amenity-checkbox input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #1e90ff;
+  border-radius: 5px;
+  background: white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  position: relative;
+}
+
+.amenity-checkbox input[type="checkbox"]:checked {
+  background: linear-gradient(to right, #1e90ff, #0073e6);
+  border-color: #0073e6;
+}
+
+.amenity-checkbox input[type="checkbox"]:checked::after {
+  content: '\2713';
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.amenity-checkbox input[type="checkbox"]:hover {
+  transform: scale(1.1);
+}
+
+.amenity-add {
+  display: flex;
+  gap: 14px;
+}
+
+.amenity-add input {
+  flex-grow: 1;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.amenity-add button {
+  background: linear-gradient(to right, #ff6b81, #ff4757);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.amenity-add button:hover {
+  background: linear-gradient(to right, #ff4757, #e84118);
+  transform: scale(1.05);
+}
+
+/* File Upload */
+input[type="file"] {
+  padding: 8px;
+  border: none;
+  background: rgba(233, 236, 239, 0.8);
+  border-radius: 8px;
+}
+
+/* Submit Button */
+.submit-btn {
+  background: linear-gradient(to right, #1e90ff, #0073e6);
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(to right, #0073e6, #1e90ff);
+  transform: scale(1.08);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}

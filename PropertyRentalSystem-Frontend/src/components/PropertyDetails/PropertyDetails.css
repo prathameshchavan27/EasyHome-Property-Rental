@@ -1,0 +1,147 @@
+/* Page Layout */
+.new-property-container {
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Slider */
+.image-gallery {
+  flex: 1;
+  max-width: 600px;
+}
+
+.property-slider {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.slider-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.no-images {
+  text-align: center;
+  font-style: italic;
+  color: #888;
+}
+
+/* Property Details */
+.property-details {
+  flex: 1;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 12px;
+}
+
+.property-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.property-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.property-info {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.rent-price {
+  color: green;
+  font-weight: bold;
+}
+
+/* Amenities */
+.property-amenities h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: start;
+}
+
+.amenity-item {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+/* Reviews */
+.property-reviews h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.review-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.review-rating {
+  font-weight: bold;
+  color: #ff9800;
+}
+
+.review-date {
+  color: #666;
+}
+
+.review-comment {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-button, .edit-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-button {
+  background: #007bff;
+  color: white;
+}
+
+.contact-button:hover {
+  background: #0056b3;
+}
+
+.edit-button {
+  background: #28a745;
+  color: white;
+}
+
+.edit-button:hover {
+  background: #218838;
+}

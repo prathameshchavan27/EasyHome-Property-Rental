@@ -1,0 +1,75 @@
+/* Profile Page Styling */
+.profile-page {
+    background: linear-gradient(to right, #0047ab, #002b80);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 15px;
+  }
+  
+  /* Card Styling */
+  .user-details, .booking-details {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 100%;
+    padding: 30px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .user-details:hover, .booking-details:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Headings */
+  .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0047ab;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  /* User Info */
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /* Table Styling */
+  .table {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .table thead {
+    background: #0047ab;
+    color: white;
+  }
+  
+  .table tbody tr:hover {
+    background: rgba(0, 71, 171, 0.1);
+    transition: 0.3s;
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    background: linear-gradient(to right, #1e90ff, #0073e6);
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(to right, #0073e6, #1e90ff);
+    transform: scale(1.05);
+  }
+  

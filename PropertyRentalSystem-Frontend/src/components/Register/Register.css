@@ -1,0 +1,88 @@
+/* Register Page Styles */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #264c8e, #007bff);
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .register-form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .register-form h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .message {
+    text-align: center;
+    color: #e74c3c;
+    margin-bottom: 15px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s;
+  }
+  
+  .input-field:focus {
+    border-color: #3498db;  /* Matching blue from login */
+    outline: none;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db; /* Blue background for the button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+  }
+  
+  p {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  p a {
+    color: #3498db; /* Matching blue from login */
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  p a:hover {
+    text-decoration: underline;
+  }
+  

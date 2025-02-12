@@ -1,0 +1,145 @@
+/* Hero Section with Gradient Background */
+.hero-section {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+  }
+  
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for readability */
+    padding: 50px 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Search Box Styling */
+  .search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .search-box input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+  }
+  
+  .search-box button {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .search-box button:hover {
+    background-color: #ff4757;
+  }
+  
+  /* Explore Properties Section */
+  .explore-properties {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .property-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Property Card Styling */
+  .property-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+    width: 250px;
+  }
+  
+  .property-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .property-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .property-info {
+    padding: 15px;
+  }
+  
+  .property-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .property-info .location {
+    font-size: 0.9rem;
+    color: gray;
+  }
+  
+  .property-info .price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .property-info button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .property-info button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* View More Button */
+  .view-more-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .view-more-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .view-more-btn:hover {
+    background-color: #218838;
+  }
+  
