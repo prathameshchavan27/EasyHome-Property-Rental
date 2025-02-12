@@ -1,0 +1,8 @@
+# Ignore all .log files
+*.log
+
+# Ignore the node_modules directory
+node_modules/
+
+# Ignore .metadata files
+.metadata/
