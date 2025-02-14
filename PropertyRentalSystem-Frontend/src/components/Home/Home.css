@@ -75,7 +75,7 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.2s;
-    width: 250px;
+    width: 300px;
   }
   
   .property-card:hover {

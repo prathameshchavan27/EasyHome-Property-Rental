@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 function FeedbackReports() {
   const [feedbacks, setFeedbacks] = useState([]);
-
+  const url = `${process.env.REACT_APP_API_URL}`;
   // Fetch feedbacks from the API
   useEffect(() => {
     fetch("API_URL/feedbacks")
@@ -14,7 +14,7 @@ function FeedbackReports() {
 
   const handleDownload = () => {
     // Adjust the URL if your backend is running on a different host/port
-    window.open('http://localhost:8081/bookings/report', '_blank');
+    window.open(`${url}/bookings/report`, '_blank');
   };
   
 

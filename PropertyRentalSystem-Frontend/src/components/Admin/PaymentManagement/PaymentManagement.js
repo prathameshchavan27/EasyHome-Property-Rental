@@ -5,10 +5,10 @@ function PaymentManagement() {
   const [payments, setPayments] = useState([]);
     const token = localStorage.getItem('jwtToken');
   // Fetch payments from the API
-
+  const url = `${process.env.REACT_APP_API_URL}`;
   const fetchPayments = async () => {
     try{
-        const response = await axios.get(`http://localhost:8081/payments/getpayments`,{headers:{
+        const response = await axios.get(`${url}/payments/getpayments`,{headers:{
             Authorization: `Bearer ${token}`
         }});
         console.log(response.data)

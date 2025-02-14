@@ -48,9 +48,10 @@ const Home = () => {
       <section className="explore-properties">
         <h2>Explore Properties</h2>
         <div className="property-grid">
-          {properties.slice(0, 4).map((item) => (  // Show only first 4 properties
+          {properties.slice(0, 4).map((item,index) => (  // Show only first 4 properties
             <div className="property-card" key={item.id}>
-              <img src={`${url}/images/${item.images[0].imageUrl}`} alt="Property" />
+              {/* <img src={`${url}/images/${item.images[0].imageUrl}`} alt="Property" /> */}
+              <img src={`/images/slide${index+1}.jpeg`} alt={`Property ${index + 1}`} />
               <div className="property-info">
                 <h3>{item.title}</h3>
                 <p><span className="location">{item.address}</span></p>

@@ -7,6 +7,7 @@ function PropertyManagement() {
   const [properties, setProperties] = useState([]);
   const navigate = useNavigate();
   const token = localStorage.getItem("jwtToken");
+  const url = `${process.env.REACT_APP_API_URL}`;
   // Fetch properties from the API
   useEffect(() => {
    fetchProperty();
@@ -14,7 +15,7 @@ function PropertyManagement() {
 
   const fetchProperty = async() => {
     try{
-      const response = await axios.get("http://localhost:8081/properties");
+      const response = await axios.get(`${url}/properties`);
       setProperties(response.data);
     }catch(error){
       console.log(error);
@@ -27,7 +28,7 @@ function PropertyManagement() {
 
   const deleteProperty = async(id) => {
     try{
-      const response = await axios.delete(`http://localhost:8081/landlord/properties/${id}`,{headers:{
+      const response = await axios.delete(`${url}/landlord/properties/${id}`,{headers:{
         Authorization: `Bearer ${token}`
       }});
       console.log(response.data);

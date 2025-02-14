@@ -6,6 +6,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
+    /* width: 300px; */
   }
   
   .property-card:hover {
@@ -97,6 +98,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
+    gap: 7px;
   }
   
   .contact-btn {

@@ -40,7 +40,8 @@ const PropertyCard = ({ property, deleteProperty }) => {
             {property.images.map((image, index) => (
               <div key={index} className="image-slide">
                 {index === 0 && <span className="live-badge">LIVE</span>}
-                <img src={`${url_backend}/images/${image.imageUrl}`} alt={`Property ${index + 1}`} />
+                {/* `${url_backend}/images/${image.imageUrl}` */}
+                <img src={`/images/slide${index+1}.jpeg`} alt={`Property ${index + 1}`} />
               </div>
             ))}
           </Slider>
@@ -63,11 +64,11 @@ const PropertyCard = ({ property, deleteProperty }) => {
             <p>Rent</p>
           </div>
           <div className="price-item">
-            <strong className="price">₹{property.deposit}</strong>
+            <strong className="price">₹{property.rent*2}</strong>
             <p>Deposit</p>
           </div>
           <div className="price-item">
-            <strong className="price">{property.builtup} sqft</strong>
+            <strong className="price">{property.builtup?property.builtup:800} sqft</strong>
             <p>Built-up Area</p>
           </div>
         </div>

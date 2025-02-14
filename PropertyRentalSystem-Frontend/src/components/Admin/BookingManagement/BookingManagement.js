@@ -4,10 +4,11 @@ import React, { useState, useEffect } from "react";
 function BookingManagement() {
   const [bookings, setBookings] = useState([]);
 const token = localStorage.getItem('jwtToken');
+const url = `${process.env.REACT_APP_API_URL}`;
   // Fetch bookings from the API
   const fetchBookings = async () => {
     try{
-        const response = await axios.get(`http://localhost:8081/bookings`,{headers:{
+        const response = await axios.get(`${url}/bookings`,{headers:{
             Authorization: `Bearer ${token}`
         }});
         console.log(response.data)
