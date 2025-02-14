@@ -40,8 +40,7 @@ const PropertyCard = ({ property, deleteProperty }) => {
             {property.images.map((image, index) => (
               <div key={index} className="image-slide">
                 {index === 0 && <span className="live-badge">LIVE</span>}
-                {/* `${url_backend}/images/${image.imageUrl}` */}
-                <img src={`/images/slide${index+1}.jpeg`} alt={`Property ${index + 1}`} />
+                <img src={`https://raw.githubusercontent.com/prathameshchavan27/EasyHome-Property-Rental/refs/heads/master/Property-Rental-System-Backendsrc/main/resources/images/${image.imageUrl}`} alt="Property"/>
               </div>
             ))}
           </Slider>

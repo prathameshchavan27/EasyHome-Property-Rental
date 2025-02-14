@@ -51,7 +51,8 @@ const Home = () => {
           {properties.slice(0, 4).map((item,index) => (  // Show only first 4 properties
             <div className="property-card" key={item.id}>
               {/* <img src={`${url}/images/${item.images[0].imageUrl}`} alt="Property" /> */}
-              <img src={`/images/slide${index+1}.jpeg`} alt={`Property ${index + 1}`} />
+              <img src={`https://raw.githubusercontent.com/prathameshchavan27/EasyHome-Property-Rental/refs/heads/master/Property-Rental-System-Backendsrc/main/resources/images/${item.images[0].imageUrl}`} alt="Property"/>
+              {/* <img src={`/images/slide${index+1}.jpeg`} alt={`Property ${index + 1}`} /> */}
               <div className="property-info">
                 <h3>{item.title}</h3>
                 <p><span className="location">{item.address}</span></p>
